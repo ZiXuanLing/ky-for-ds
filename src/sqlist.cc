@@ -32,7 +32,7 @@ bool ListInsert(SqList &L, int i, int e) {
     return true;
 }
 
-bool ListDelete(SeqList &L, int i, int e) {
+int ListDelete(SqList &L, int i, int e) {
     if (i < 1 || i > L.length + 1) {
         return false;
     }
@@ -41,7 +41,7 @@ bool ListDelete(SeqList &L, int i, int e) {
         L.data[j - 1] = L.data[j];
     }
     L.length --;
-    return true;
+    return e;
 } 
 
 int LocateElem(SqList L, int e) {

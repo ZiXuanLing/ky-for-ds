@@ -42,7 +42,7 @@ bool ListInsert(SqList &L, int i, int e);  // 插入操作
  * @return true 
  * @return false 
  */
-bool ListDelete(SqList &L, int i, int e);  // 删除操作
+int ListDelete(SqList &L, int i, int e);  // 删除操作
 
 /**
  * @brief 查找顺序表中第一个元素值等于e的元素
